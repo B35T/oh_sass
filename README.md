@@ -9,7 +9,7 @@
 
 **Install**
 ```
-$ go get github.com/tualeke/oh_sass
+$ go get -u github.com/tualeke/oh_sass
 ```
 
 **Example usage**
