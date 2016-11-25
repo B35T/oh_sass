@@ -7,12 +7,12 @@
 *[sass](http://sass-lang.com) and [stylus](http://stylus-lang.com)*
 (css compression)
 
-**Install
+**Install**
 ```
 $ go get github.com/tualeke/oh_sass
 ```
 
-**Example usage
+**Example usage**
 ```
 	// source sass file
 	path , err := oh_sass.SassCompile("sass source")
