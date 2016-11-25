@@ -49,6 +49,29 @@ func main() {
 }
 ```
 
+##or##
+```
+package main
+
+
+import (
+	"log"
+	"github.com/tualeke/oh_sass"
+)
+
+func main() {
+	
+	source := "template/static/sass/style.sass"  // source .sass and .styl file
+	output := "template/public/css/main.css"     // output to your folder
+	
+	err := oh_sass.CompileTo(source,output)
+	if err != nil {
+		log.Println(err)
+	}
+
+}
+```
+
 ##SYNTAX
 .sass Example 
 ```
