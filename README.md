@@ -14,7 +14,7 @@ $ go get github.com/tualeke/oh_sass
 
 **Example usage**
 ```
-	// source sass file
+	// source .sass and .styl file
 	path , err := oh_sass.SassCompile("sass source")
 	if err != nil {
 		log.Println(err)
@@ -24,6 +24,29 @@ $ go get github.com/tualeke/oh_sass
 	err = oh_sass.MoveTo(path,"output to your folder")
 	if err != nil {
 		log.Println(err)
+```
+**Example**
+```
+package main
+
+import (
+	"log"
+	"github.com/tualeke/oh_sass"
+)
+
+func main() {
+	// source .sass and .styl file
+	path , err := oh_sass.SassCompile("template/static/sass/style.sass")
+	if err != nil {
+		log.Println(err)
+	}
+
+	// output to your folder
+	err = oh_sass.MoveTo(path,"template/public/css/main.css")
+	if err != nil {
+		log.Println(err)
+	}
+}
 ```
 
 ##SYNTAX
