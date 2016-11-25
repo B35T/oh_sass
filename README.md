@@ -7,6 +7,25 @@
 *[sass](http://sass-lang.com) and [stylus](http://stylus-lang.com)*
 (css compression)
 
+**Install
+```
+$ go get github.com/tualeke/oh_sass
+```
+
+**Example usage
+```
+	// source sass file
+	path , err := oh_sass.SassCompile("sass source")
+	if err != nil {
+		log.Println(err)
+	}
+
+	// output to your folder
+	err = oh_sass.MoveTo(path,"output to your folder")
+	if err != nil {
+		log.Println(err)
+```
+
 ##SYNTAX
 .sass Example 
 ```
