@@ -21,7 +21,7 @@ func MoveTo(source, output string) error {
 	return err
 }
 
-func SassComplieTo(source, output string) error {
+func CompileTo(source, output string) error {
 	path,err := gcss.CompileFile(source)
 	if err != nil {
 		return err
