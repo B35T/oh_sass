@@ -12,6 +12,8 @@
 $ go get -u github.com/tualeke/oh_sass
 ```
 
+**[Youtube](https://www.youtube.com/watch?v=BndfOu57Uko)**
+
 **Example usage**
 ```
 	// source .sass and .styl file
